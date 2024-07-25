@@ -3,7 +3,7 @@
 
 ## Events
 
-- Open Mailbox NUI by a location name as parameter (Location must exist on Config.Locations).
+Open Mailbox NUI by a location name as parameter (Location must exist on Config.Locations).
 ```lua
 
 TriggerEvent("tp_mailbox:client:openMailboxByLocationName", locationName ) -- Client Side

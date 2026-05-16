@@ -23,6 +23,7 @@ local telegrams = MailboxAPI.GetPlayerTelegrams()
 - Open Mailbox NUI by a location name as parameter (Location must exist on Config.Locations).
 ```lua
 
+--- @param locationName - requires the custom location name from Config.Locations.
 TriggerEvent("tp_mailbox:client:openMailboxByLocationName", locationName ) -- client to client
 TriggerClientEvent("tp_mailbox:client:openMailboxByLocationName", source, locationName ) -- server to client
 ```

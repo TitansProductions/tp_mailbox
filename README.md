@@ -53,7 +53,7 @@ To create a valid custom config location for opening through the event:
 
         -- Set to true if you are using target eye for opening the mailbox office. 
         -- (!) Required an NPC Enabled, otherwise must be set to false.
-        TargetEye = { Enabled = false, Script = 'ox_target', Display = 'Open Mailbox Office'}, -- version 3.1.7
+        TargetEye = { Enabled = false, Script = '', Display = ''}, -- version 3.1.7 (NO TARGET EYE)
 
         ActionDistance = 0.0,
     },

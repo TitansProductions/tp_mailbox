@@ -27,6 +27,37 @@ TriggerEvent("tp_mailbox:client:openMailboxByLocationName", locationName ) -- cl
 TriggerClientEvent("tp_mailbox:client:openMailboxByLocationName", source, locationName ) -- server to client
 ```
 
+To create a valid custom config location for opening through the event:
+
+```lua
+    ['custom'] = { -- Add your custom name
+        Name = "Custom Office", -- Add your custom name
+
+        Coords = {x = 0.0, y = 0.0, z = 0.0},
+
+        City = "Your Custom Title",
+
+        Hours = { Enabled = false, Duration = {am = 7, pm = 21} },
+
+        BlipData = {
+            Enabled = false,
+            Sprite = 1861010125,
+        },
+
+        NPCData = {
+            Enabled = false,
+            Model = "rcsp_coachrobbery_males_01",
+            Coords = {x = 0.0, y = 0.0, z = 0.0, h = 0.0},
+        },
+
+        -- Set to true if you are using target eye for opening the mailbox office. 
+        -- (!) Required an NPC Enabled, otherwise must be set to false.
+        TargetEye = { Enabled = false, Script = 'ox_target', Display = 'Open Mailbox Office'}, -- version 3.1.7
+
+        ActionDistance = 0.0,
+    },
+```
+
 ## SERVER:
 
 ### Exports

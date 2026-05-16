@@ -37,16 +37,16 @@ To create a valid custom config location for opening through the event:
 
         City = "Your Custom Title",
 
-        Hours = { Enabled = false, Duration = {am = 7, pm = 21} },
+        Hours = { Enabled = false, Duration = {am = 7, pm = 21} }, -- NO HOURS
 
-        BlipData = {
+        BlipData = { -- NO BLIP
             Enabled = false,
             Sprite = 1861010125,
         },
 
-        NPCData = {
+        NPCData = { -- NO NPC
             Enabled = false,
-            Model = "rcsp_coachrobbery_males_01",
+            Model = "",
             Coords = {x = 0.0, y = 0.0, z = 0.0, h = 0.0},
         },
 
